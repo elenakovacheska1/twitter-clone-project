@@ -20,6 +20,8 @@ document.addEventListener("click", function (e) {
     handleOwnRepliesClick(e.target.dataset.ownreplies);
   } else if (e.target.dataset.delete) {
     handleDeleteClick(e.target.dataset.delete);
+  } else if (e.target === document.querySelector("body")) {
+    render();
   }
 });
 
